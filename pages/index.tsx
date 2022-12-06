@@ -15,7 +15,9 @@ export default function Home() {
         <h1 className={styles.title}>
           Welcome to <Link href={'/'}>Dave and Jerri&apos;s</Link> Wedding!
         </h1>
-
+        <p className={styles.description}>
+          October 8th, 2023
+        </p>
         <p className={styles.description}>
           More details coming soon...
         </p>
