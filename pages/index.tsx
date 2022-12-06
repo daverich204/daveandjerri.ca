@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -12,7 +13,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a href="/">Dave and Jerri's</a> Wedding!
+          Welcome to <Link href={'/'}>Dave and Jerri's</Link> Wedding!
         </h1>
 
         <p className={styles.description}>
