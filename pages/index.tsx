@@ -27,7 +27,7 @@ export default function Home() {
             color="text.primary"
             gutterBottom
           >
-            Welcome to Dave and Jerri's Wedding
+            Welcome to Dave and Jerri&apos;s Wedding
           </Typography>
           <Typography variant="h5" align="center" color="text.secondary" paragraph>
             October 8th, 2023 @ <Link href={"https://nivervilleeventcentre.com/"} target={"_blank"}>Niverville Heritage Centre</Link>
