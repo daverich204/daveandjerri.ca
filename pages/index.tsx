@@ -1,37 +1,51 @@
-import Head from 'next/head'
-import Link from 'next/link'
-import styles from '../styles/Home.module.css'
+import * as React from 'react';
+import Container from '@mui/material/Container';
+import Typography from '@mui/material/Typography';
+import Box from '@mui/material/Box';
+import Button from '@mui/material/Button';
+import Stack from '@mui/material/Stack';
+
+import Link from '../src/Link';
 
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>DaveAndJerri.ca</title>
-        <meta name="description" content="Dave and Jerri" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <Container maxWidth="lg">
+      <Box
+        sx={{
+          my: 4,
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'center',
+          alignItems: 'center',
+        }}
+      >
+        <Container maxWidth="sm">
+          <Typography
+            component="h1"
+            variant="h2"
+            align="center"
+            color="text.primary"
+            gutterBottom
+          >
+            Welcome to Dave and Jerri's Wedding
+          </Typography>
+          <Typography variant="h5" align="center" color="text.secondary" paragraph>
+            October 8th, 2023 @ <Link href={"https://nivervilleeventcentre.com/"} target={"_blank"}>Niverville Heritage Centre</Link>
+          </Typography>
+          <Stack
+            sx={{ pt: 4 }}
+            direction="row"
+            spacing={2}
+            justifyContent="center"
+          >
+            <Link href="/rsvp">
+              <Button variant="contained">RSVP</Button>
+            </Link>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <Link href={'/'}>Dave and Jerri&apos;s</Link> Wedding!
-        </h1>
-        <p className={styles.description}>
-          October 8th, 2023
-        </p>
-        <p className={styles.description}>
-          More details coming soon...
-        </p>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://daverichardson.ca"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Made with love by{' '}Dave
-        </a>
-      </footer>
-    </div>
-  )
+            <Button variant="outlined">Watch Live</Button>
+          </Stack>
+        </Container>
+      </Box>
+    </Container>
+  );
 }
