@@ -20,7 +20,7 @@ export default function RSVP() {
         <div className="grid grid-cols-1 md:grid-cols-12 mt-10">
           <div className="col-span-1 md:col-span-8">
             <h2 className={styles.subtitle}>
-              We'd love it if you could RSVP by June 15, 2023...
+              We&apos;d love it if you could RSVP by June 15, 2023...
             </h2>
             <p className={styles.description}>
               If you have any problems, please reach out to us by at: <br />
