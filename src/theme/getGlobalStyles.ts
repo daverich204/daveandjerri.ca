@@ -96,9 +96,9 @@ export const getGlobalStyles = (theme: ReturnType<typeof getMuiTheme>) => css`
   #__next {
     min-height: 100%;
     min-width: 100%;
-    padding-right: 3em;
+    padding-right: 1em;
     padding-bottom: 64vh;
-    padding-left: 2em;
+    padding-left: 1em;
 
     ${theme.breakpoints.up("sm")} {
       padding-right: 3.5em;
