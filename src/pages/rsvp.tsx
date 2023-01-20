@@ -8,7 +8,7 @@ export default function RSVP() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>DaveAndJerri.ca > RSVP</title>
+        <title>DaveAndJerri.ca &gt; RSVP</title>
         <meta name="description" content="Dave and Jerri > RSVP"/>
         <link rel="icon" href="/favicon.ico"/>
       </Head>
