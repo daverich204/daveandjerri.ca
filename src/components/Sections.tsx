@@ -26,6 +26,10 @@ import type { SlideProps } from "@mui/material/Slide";
 const About = dynamic<SectionProps>(
   import("./sections/About").then(({ About }) => About)
 );
+
+const RSVP = dynamic<SectionProps>(
+  import("./sections/RSVP").then(({ RSVP }) => RSVP)
+);
 //
 // const Blog = dynamic<SectionProps>(
 //   import("./sections/Blog").then(({ Blog }) => Blog)
@@ -82,6 +86,10 @@ export const Sections = memo(() => {
       <About
         id={Section.about}
         onEnterViewport={() => debouncedReplace(Section.about)}
+      />
+      <RSVP
+        id={Section.rsvp}
+        onEnterViewport={() => debouncedReplace(Section.rsvp)}
       />
       {/*<RobotPortal*/}
       {/*  in={botPosition.start}*/}
