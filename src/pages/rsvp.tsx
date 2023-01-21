@@ -146,7 +146,7 @@ export default function RSVP() {
               focus:ring-indigo-200
               focus:ring-opacity-50
             "
-                      rows="3"
+                      rows={3}
                       placeholder="Questions, concerns, something we should be aware of?"
                     ></textarea>
                   </label>
