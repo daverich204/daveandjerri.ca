@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const ThankYouPage = () => {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center p-24">
+    <main className="flex min-h-screen flex-col items-center justify-center p-24 text-purple-700 dark:text-blue-700">
       <div className="relative mb-12 text-center">
         <h1 className={"text-2xl"}> Thank you! </h1>
 
