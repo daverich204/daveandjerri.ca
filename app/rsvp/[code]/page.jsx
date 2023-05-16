@@ -19,8 +19,8 @@ const RsvpPage = () => {
     )
   } else {
     return (
-      <div className={"flex min-h-screen flex-col items-center justify-between"}>
-        Loading fooo...
+      <div className={"flex min-h-screen flex-col items-center justify-between text-purple-700 dark:text-blue-700"}>
+        Loading...
       </div>
     );
   }
