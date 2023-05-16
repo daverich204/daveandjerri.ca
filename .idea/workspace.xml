@@ -3,11 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="4e9f3f1b-959d-41c2-8d5f-1886b58de959" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/rsvp/[code]/page.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/rsvp/[code]/page.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/rsvp/page.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/rsvp/page.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/rsvp/thankyou/page.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/rsvp/thankyou/page.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/rsvp/guest_attendance.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/rsvp/guest_attendance.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/rsvp/rsvp_form.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/rsvp/rsvp_form.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
