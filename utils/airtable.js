@@ -34,10 +34,10 @@ export async function getGuest (guestId) {
   console.log("getGuest() guestId => ", guestId);
   const guest = await base('guests').find(guestId)
 
-  const { name, type, attending } = guest.fields;
+  const { name, type, attending, virtual_allowed } = guest.fields;
 
   // format a response
-  return { id: guest.id, name, type, attending };
+  return { id: guest.id, name, type, attending, virtual_allowed };
 }
 
 // update guest attendance setting

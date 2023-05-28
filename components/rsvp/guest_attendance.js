@@ -22,6 +22,7 @@ export const GuestAttendance = ({ guestId, responses, handleResponseChange, hasG
   }
 
   if (guest) {
+    console.log("guest => ", guest);
     return (
       <div key={guestId} className="rounded-lg p-4 mb-4 flex justify-between items-center bg-navy text-purple-700 dark:text-blue-700">
         <div className="flex items-center">
@@ -48,6 +49,18 @@ export const GuestAttendance = ({ guestId, responses, handleResponseChange, hasG
             />
             <span className="text-xl">No</span>
           </label>
+          {guest.virtual_allowed && (
+            <label>
+              <input
+                type="radio"
+                value="No"
+                checked={isGuestChecked("No")}
+                onChange={() => handleResponseChange(guestId, "No")}
+                className="mr-2 leading-tight"
+              />
+              <span className="text-xl">Attending Virtually</span>
+            </label>
+          )}
         </div>
       </div>
     );
