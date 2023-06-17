@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { GuestAttendance } from './guest_attendance';
 
+import Paper from '../Paper';
+
 const RsvpForm = ({ inviteResponse }) => {
   const router = useRouter();
 
@@ -50,7 +52,8 @@ const RsvpForm = ({ inviteResponse }) => {
   };
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24 text-purple-700 dark:text-blue-700">
+    <main className="flex min-h-screen w-full flex-col items-end justify-between p-24 text-purple-700 dark:text-blue-700">
+      <Paper>
       <div className="group shadow-md rounded-lg border border-transparent px-5 py-4 bg-plum flex justify-center items-center">
         <form onSubmit={handleSubmit} className="rounded-lg p-8">
           <h1 className="text-2xl mb-4">Welcome {envelope_name},</h1>
@@ -76,6 +79,7 @@ const RsvpForm = ({ inviteResponse }) => {
           </button>
         </form>
       </div>
+      </Paper>
     </main>
   )
 }

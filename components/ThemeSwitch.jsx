@@ -28,13 +28,13 @@ const ThemeSwitch = () => {
 
   return (
     <button
-      className="fixed bottom-0 right-0 p-4 flex items-center justify-center"
+      className="fixed rounded-full bottom-0 right-0 p-4 m-2 flex items-center justify-center bg-plum-600 dark:bg-navy-600"
       onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 100 100"
-        className="w-8 h-8 fill-current text-black dark:text-white"
+        className="w-8 h-8 fill-current text-white"
       >
         {theme === 'dark' ? (
           <path className="st0"
