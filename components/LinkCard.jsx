@@ -10,7 +10,7 @@ export const LinkCard = ({ link, target, title, text, linkProps }) => {
      {...linkProps}
     >
       <div
-        className={`${inter.className} h-full sm:max-w-full px-5 py-4 bg-white border border-gray-200 rounded-lg backdrop-blur-2xl text-white shadow bg-plum-400/50 dark:bg-navy-900/50 border-plum-700 dark:border-navy-700 dark:text-white transition-colors hover:bg-plum-300 hover:text-black hover:text-white dark:hover:bg-navy-900 dark:hover:text-white`}
+        className={`${inter.className} h-full sm:max-w-full px-5 py-4 bg-white border border-gray-200 rounded-lg backdrop-blur-2xl text-white shadow bg-plum-600/80 dark:bg-navy-900/50 border-plum-700 dark:border-navy-700 dark:text-white transition-colors hover:bg-plum-300 hover:text-black hover:text-white dark:hover:bg-navy-900 dark:hover:text-white`}
       >
         <h5 className={`${inter.className} mb-3 text-2xl font-semibold`}>
           {`${title} `}
