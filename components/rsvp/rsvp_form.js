@@ -53,7 +53,7 @@ const RsvpForm = ({ inviteResponse }) => {
 
   return (
     <main className="flex min-h-screen w-full flex-col items-end justify-between p-24 text-purple-700 dark:text-blue-700">
-      <Paper>
+      {/*<Paper>*/}
       <div className="group shadow-md rounded-lg border border-transparent px-5 py-4 bg-plum flex justify-center items-center">
         <form onSubmit={handleSubmit} className="rounded-lg p-8">
           <h1 className="text-2xl mb-4">Welcome {envelope_name},</h1>
@@ -72,14 +72,14 @@ const RsvpForm = ({ inviteResponse }) => {
           ))}
 
           <button
-            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4 text-center"
+            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4 text-center w-full border-plum-900 dark:border-navy-900"
             type="submit"
           >
             Submit
           </button>
         </form>
       </div>
-      </Paper>
+      {/*</Paper>*/}
     </main>
   )
 }
