@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 
+import Paper from '../../components/Paper';
 
 const RsvpCodePage = () => {
   const router = useRouter();
@@ -19,11 +20,13 @@ const RsvpCodePage = () => {
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-center p-24 text-purple-700 dark:text-blue-700">
-      <div className="relative mb-12">
-        <h1 className={"text-2xl"}> We&apos;d love it if you could let us know if you will be attending our wedding.</h1>
-      </div>
+      <Paper>
+        <div className="relative mb-12">
+          <h1 className={"text-2xl"}> We&apos;d love it if you could let us know if you will be attending our wedding.</h1>
+        </div>
 
-      <div className="group rounded-lg border px-5 py-4 border-gray-300 bg-gray-100 dark:border-neutral-700 dark:bg-neutral-800/30">
+        <hr className={"py-4"} />
+
         <h2 className={`mb-3 text-2xl font-semibold text-center`}>
           RSVP
         </h2>
@@ -34,7 +37,7 @@ const RsvpCodePage = () => {
           <div className={"relative"}>
             <label htmlFor={"invite_code"} className={"mt-12 pr-12"}>Invite Code</label>
             <input
-              className="text-black text-2xl enabled:hover:border-gray-400 disabled:opacity-75 p-1"
+              className="text-black dark:text-white text-2xl enabled:hover:border-gray-400 disabled:opacity-75 p-1"
               type={"text"} id={"invite_code"} name={"invite_code"} required />
           </div>
 
@@ -44,7 +47,8 @@ const RsvpCodePage = () => {
             </button>
           </div>
         </form>
-      </div>
+      </Paper>
+
     </main>
   )
 }

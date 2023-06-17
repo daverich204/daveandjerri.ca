@@ -3,6 +3,8 @@ import { Inter } from 'next/font/google'
 import { Providers } from './providers'
 
 import ThemeSwitch from "components/ThemeSwitch";
+import Navigation from 'components/Navigation';
+import DynamicBackgroundImage from 'components/DynamicBackgroundImage';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -17,8 +19,11 @@ export default function RootLayout({ children }) {
       <head />
       <body className={"bg-gradient-to-br from-rgb-75-0-130 to-rgb-147-112-219 dark:bg-gradient-to-br from-rgb-44-62-80 to-rgb-26-43-61"}>
         <Providers>
-          {children}
-          <ThemeSwitch />
+          <DynamicBackgroundImage>
+            <Navigation />
+            {children}
+            <ThemeSwitch />
+          </DynamicBackgroundImage>
         </Providers>
       </body>
     </html>
