@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const LinkCard = ({ link, target, title, text, linkProps }) => {
   const rootLinkClass = "group rounded-lg border border-transparent px-5 py-4 sm:py-0 w-full";
-  const containerClass = `${inter.className} h-full sm:max-w-full px-5 py-4 bg-white border border-gray-200 rounded-lg backdrop-blur-2xl text-white shadow bg-plum-600/50 dark:bg-navy-900/50 border-plum-700 dark:border-navy-700 dark:text-white transition-colors hover:bg-plum-300 hover:text-black hover:text-white dark:hover:bg-navy-900 dark:hover:text-white`
+  const containerClass = `${inter.className} h-full sm:max-w-full px-5 py-4 bg-white border border-gray-200 rounded-lg backdrop-blur-2xl text-white shadow bg-plum-600/80 dark:bg-navy-900/50 border-plum-700 dark:border-navy-700 dark:text-white transition-colors hover:bg-plum-300 hover:text-black hover:text-white dark:hover:bg-navy-900 dark:hover:text-white`
   const titleClass = `${inter.className} mb-3 text-2xl font-semibold`
   const bodyClass = `${inter.className} m-0 max-w-[30ch] text-sm opacity-50`
 

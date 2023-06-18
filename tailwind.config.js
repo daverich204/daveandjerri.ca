@@ -6,15 +6,6 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
-  safelist: [
-    'bg-plum-400',
-    'bg-plum-600',
-    'bg-plum-900',
-    'text-white',
-    'bg-navy-400',
-    'bg-navy-600',
-    'bg-navy-900'
-  ],
   theme: {
     extend: {
       colors: {
