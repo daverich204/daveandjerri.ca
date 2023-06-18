@@ -19,7 +19,7 @@ const RsvpCodePage = () => {
   }
 
   return (
-    <main className="flex min-h-screen w-full flex-col items-center justify-center p-24">
+    <main className="flex min-h-screen w-full flex-col items-center justify-center lg:p-24">
       <Paper>
         <div className="relative mb-12">
           <h2 className={"text-2xl"}> We&apos;d love it if you could let us know if you will be attending our wedding.</h2>
@@ -29,7 +29,7 @@ const RsvpCodePage = () => {
           <div className={"relative"}>
             <label htmlFor={"invite_code"} className={"mt-12 pr-12"}>Please enter you&apos;re invite code</label>
             <input
-              className="text-black dark:text-white text-2xl enabled:hover:border-gray-400 disabled:opacity-75 p-1 w-full rounded-lg mt-4"
+              className="text-black dark:text-white text-center text-2xl enabled:hover:border-gray-400 disabled:opacity-75 p-1 w-full rounded-lg mt-4"
               type={"text"} id={"invite_code"} name={"invite_code"} required />
           </div>
 
