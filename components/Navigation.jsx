@@ -47,7 +47,7 @@ const Navigation = ({ }) => {
           </div>
         </Link>
         <button
-          className=" inline-flex p-3 hover:bg-plum-300 dark:bg-navy-300 rounded lg:hidden text-white ml-auto hover:text-white outline-none"
+          className=" inline-flex p-3 hover:bg-plum-300 dark:hover:bg-navy-300 rounded lg:hidden text-white ml-auto hover:text-white outline-none"
           onClick={handleClick}
         >
           <svg
