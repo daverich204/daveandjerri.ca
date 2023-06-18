@@ -14,7 +14,7 @@ module.exports = {
     'bg-navy-400',
     'bg-navy-600',
     'bg-navy-900'
-  ]
+  ],
   theme: {
     extend: {
       colors: {
