@@ -52,15 +52,14 @@ const RsvpForm = ({ inviteResponse }) => {
   };
 
   return (
-    <main className="flex min-h-screen w-full flex-col items-end justify-between p-24 text-purple-700 dark:text-blue-700">
+    <main className="flex min-h-screen w-full flex-col items-end justify-between lg:p-24 pt-20">
       <Paper>
-      <div className="group shadow-md rounded-lg border border-transparent px-5 py-4 bg-plum flex justify-center items-center">
-        <form onSubmit={handleSubmit} className="rounded-lg p-8">
+        <form onSubmit={handleSubmit}>
           <h1 className="text-2xl mb-4">Welcome {envelope_name},</h1>
-          <h2 className="text-lg mb-4 mt-12">{messages.invitation}</h2>
-          <h3 className="text-3xl mb-4 text-center">{messages.title}</h3>
+          <h2 className="text-lg mb-4">{messages.invitation}</h2>
+          <h3 className="text-3xl mb-8 text-center">{messages.title}</h3>
           <h3 className="text-md mb-4 text-center">{messages.date_and_place}</h3>
-          <h3 className="text-md mb-4 mt-12 text-center">{messages.question}</h3>
+          <h3 className="text-md mb-4 mt-12">{messages.question}</h3>
           {(guests || []).map(guestId => (
             <GuestAttendance
               key={guestId}
@@ -72,13 +71,12 @@ const RsvpForm = ({ inviteResponse }) => {
           ))}
 
           <button
-            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4 text-center"
+            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4 text-center w-full border-plum-900 dark:border-navy-900"
             type="submit"
           >
             Submit
           </button>
         </form>
-      </div>
       </Paper>
     </main>
   )

@@ -22,9 +22,8 @@ export const GuestAttendance = ({ guestId, responses, handleResponseChange, hasG
   }
 
   if (guest) {
-    console.log("guest => ", guest);
     return (
-      <div key={guestId} className="rounded-lg p-4 mb-4 flex justify-between items-center bg-navy text-purple-700 dark:text-blue-700">
+      <div key={guestId} className="rounded-lg p-4 flex justify-between items-center">
         <div className="flex items-center">
           <label className="font-bold mr-4">{guest.name}</label>
         </div>
