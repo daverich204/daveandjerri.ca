@@ -19,6 +19,12 @@ const Navigation = ({ }) => {
   if (pathname.indexOf("rsvp") > 0) {
     navText = "RSVP"
   }
+  if (pathname.indexOf("thankyou") > 0) {
+    navText = "Thank you!"
+  }
+  if (pathname.indexOf("contact") > 0) {
+    navText = "Contact us"
+  }
 
 
   return (
