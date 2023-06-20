@@ -35,10 +35,9 @@ export default function Home() {
 
       <div className="testfoo mb-32 grid text-center lg:mb-0 lg:grid-cols-3 sm:grid-cols-1 lg:text-left justify-evenly">
         <LinkCard
-          link={'mailto:contact@daveandjerri.ca'}
+          link={'/contact'}
           title={'Need Help?'}
           text={'Contact us for more details.'}
-          linkProps={{ target: '_blank' }}
         />
 
         <LinkCard

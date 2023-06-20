@@ -33,7 +33,7 @@ const RsvpCodePage = () => {
 
         <form onSubmit={handleSubmit} className={"flex-col mt-12"}>
           <div className={"relative"}>
-            <p className={"mt-12 pr-4"}>Let us know if you're having any troubles, or would like more information...</p>
+            <p className={"mt-12 pr-4"}>Let us know if you&apos;re having any troubles, or would like more information...</p>
           </div>
 
           <div className={"relative mt-6 text-center w-full"}>
