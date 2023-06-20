@@ -43,7 +43,7 @@ const RsvpCodePage = () => {
               </div>
             </Link>
 
-            <Link href={"tel:555-666-7777"} className={"group rounded-lg border border-transparent px-5 py-4 sm:py-0 w-full"}>
+            <Link href={"tel:204-202-9454"} className={"group rounded-lg border border-transparent px-5 py-4 sm:py-0 w-full"}>
               <div className={`${inter.className} h-full sm:max-w-full px-5 py-4 border border-gray-200 rounded-lg backdrop-blur-2xl text-white shadow bg-plum-300/80 dark:bg-navy-900/50 border-plum-700 dark:border-navy-700 dark:text-white transition-colors hover:bg-plum-300 hover:text-black hover:text-white dark:hover:bg-navy-900 dark:hover:text-white`}>
                 Phone a friend, leave a message
               </div>
