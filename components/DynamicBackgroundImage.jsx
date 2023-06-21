@@ -3,28 +3,51 @@
 import { useState, useEffect } from 'react'
 import { useTheme } from 'next-themes'
 
-const ThemeSwitch = ({ children }) => {
+import { useWindowSize } from './hooks/useWindowSize'
+
+const DynamicBackgroundImage = ({ children }) => {
   const [backgroundImages, setBackgroundImages] = useState([]);
-  const [mounted, setMounted] = useState(false)
-  const { theme } = useTheme()
+  const [mounted, setMounted] = useState(false);
+
+  const { theme } = useTheme();
+  const { width } = useWindowSize(); // Get the window width using the custom hook
+
+
   const isDarkTheme = theme === 'dark';
+  const isMobile = width <= 768; // Adjust the breakpoint as needed for your mobile devices
+
+  // Define your background images for light and dark themes
+  const lightImages = [
+    '/backgrounds/bg_engagement_light_1.jpg',
+    '/backgrounds/bg_engagement_light_2.jpg',
+    '/backgrounds/bg_engagement_light_3.jpg',
+  ];
+  const darkImages = [
+    '/backgrounds/bg_engagement_dark_1.jpg',
+    '/backgrounds/bg_engagement_dark_2.jpg',
+    '/backgrounds/bg_engagement_dark_3.jpg',
+  ];
+
+  const mobileLightImages = [
+    '/backgrounds/bg_engagement_light_mobile_1.jpg',
+    '/backgrounds/bg_engagement_light_mobile_2.jpg',
+    '/backgrounds/bg_engagement_light_mobile_3.jpg',
+  ];
+
+  const mobileDarkImages = [
+    '/backgrounds/bg_engagement_dark_mobile_1.jpg',
+    '/backgrounds/bg_engagement_dark_mobile_2.jpg',
+    '/backgrounds/bg_engagement_dark_mobile_3.jpg',
+    '/backgrounds/bg_engagement_dark_mobile_4.jpg',
+  ];
 
   useEffect(() => {
-    // Define your background images for light and dark themes
-    const lightImages = [
-      '/backgrounds/bg_engagement_light_1.jpg',
-      '/backgrounds/bg_engagement_light_2.jpg',
-      '/backgrounds/bg_engagement_light_3.jpg',
-    ];
-
-    const darkImages = [
-      '/backgrounds/bg_engagement_dark_1.jpg',
-      '/backgrounds/bg_engagement_dark_2.jpg',
-      '/backgrounds/bg_engagement_dark_3.jpg',
-    ];
-
-    setBackgroundImages(isDarkTheme ? darkImages : lightImages);
-  }, [isDarkTheme]);
+    if (isMobile) {
+      setBackgroundImages(isDarkTheme ? mobileDarkImages : mobileLightImages);
+    } else {
+      setBackgroundImages(isDarkTheme ? darkImages : lightImages);
+    }
+  }, [isDarkTheme, isMobile]);
 
   useEffect(() => {
     // Function to cycle through background images
@@ -103,4 +126,4 @@ const ThemeSwitch = ({ children }) => {
   );
 };
 
-export default ThemeSwitch
+export default DynamicBackgroundImage
