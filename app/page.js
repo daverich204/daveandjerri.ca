@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-8 lg:p-24 overflow-y-auto overflow-x-clip">
       <div className="w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <div className="relative flex place-items-center before:absolute before:h-[600px] before:w-[960px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-plum before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[360px] after:w-[480px] after:translate-x-1/3 after:bg-gradient-conic after:from-plum-100 after:via-plum-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-navy-700 before:dark:opacity-10 after:dark:from-navy-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[720px]">
+        <div className="opacity-75 relative flex place-items-center before:absolute before:h-[600px] before:w-[960px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-plum before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[360px] after:w-[480px] after:translate-x-1/3 after:bg-gradient-conic after:from-plum-100 after:via-plum-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-navy-700 before:dark:opacity-10 after:dark:from-navy-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[720px]">
           <Image
             className="relative pt-24 dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
             src="/DaveAndJerri.svg"
