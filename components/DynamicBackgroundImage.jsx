@@ -5,6 +5,8 @@ import { useTheme } from 'next-themes'
 
 import { useWindowSize } from './hooks/useWindowSize'
 
+const bgExt = "webp";
+
 const DynamicBackgroundImage = ({ children }) => {
   const [backgroundImages, setBackgroundImages] = useState([]);
   const [mounted, setMounted] = useState(false);
@@ -18,27 +20,27 @@ const DynamicBackgroundImage = ({ children }) => {
 
   // Define your background images for light and dark themes
   const lightImages = [
-    '/backgrounds/bg_engagement_light_1.jpg',
-    '/backgrounds/bg_engagement_light_2.jpg',
-    '/backgrounds/bg_engagement_light_3.jpg',
+    `/backgrounds/bg_engagement_light_1.${bgExt}`,
+    `/backgrounds/bg_engagement_light_2.${bgExt}`,
+    `/backgrounds/bg_engagement_light_3.${bgExt}`,
   ];
   const darkImages = [
-    '/backgrounds/bg_engagement_dark_1.jpg',
-    '/backgrounds/bg_engagement_dark_2.jpg',
-    '/backgrounds/bg_engagement_dark_3.jpg',
+    `/backgrounds/bg_engagement_dark_1.${bgExt}`,
+    `/backgrounds/bg_engagement_dark_2.${bgExt}`,
+    `/backgrounds/bg_engagement_dark_3.${bgExt}`,
   ];
 
   const mobileLightImages = [
-    '/backgrounds/bg_engagement_light_mobile_1.jpg',
-    '/backgrounds/bg_engagement_light_mobile_2.jpg',
-    '/backgrounds/bg_engagement_light_mobile_3.jpg',
+    `/backgrounds/bg_engagement_light_mobile_1.${bgExt}`,
+    `/backgrounds/bg_engagement_light_mobile_2.${bgExt}`,
+    `/backgrounds/bg_engagement_light_mobile_3.${bgExt}`,
   ];
 
   const mobileDarkImages = [
-    '/backgrounds/bg_engagement_dark_mobile_1.jpg',
-    '/backgrounds/bg_engagement_dark_mobile_2.jpg',
-    '/backgrounds/bg_engagement_dark_mobile_3.jpg',
-    '/backgrounds/bg_engagement_dark_mobile_4.jpg',
+    `/backgrounds/bg_engagement_dark_mobile_1.${bgExt}`,
+    `/backgrounds/bg_engagement_dark_mobile_2.${bgExt}`,
+    `/backgrounds/bg_engagement_dark_mobile_3.${bgExt}`,
+    `/backgrounds/bg_engagement_dark_mobile_4.${bgExt}`,
   ];
 
   useEffect(() => {
