@@ -54,10 +54,9 @@ export default function Home() {
         {/*/>*/}
 
         <LinkCard
-          link={'https://www.amazon.ca/wedding/share/daveandjerri2023'}
-          title={'Registry'}
-          text={'View our registry on Amazon.'}
-          linkProps={{ target: '_blank', rel: 'noopener noreferrer' }}
+          link={'/details'}
+          title={'Details'}
+          text={'Who, what, when & where for the big day.'}
         />
       </div>
     </main>

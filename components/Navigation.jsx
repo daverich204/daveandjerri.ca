@@ -25,13 +25,16 @@ const Navigation = ({ }) => {
   if (pathname.indexOf("contact") > 0) {
     navText = "Contact us"
   }
+  if (pathname.indexOf("details") > 0) {
+    navText = "Details"
+  }
 
 
   return (
     <>
-      <nav className="fixed top-0 left-0 z-10 flex items-center justify-center flex-wrap bg-plum-600/90 dark:bg-navy-600/90 p-3 w-full">
+      <nav className="fixed top-0 left-0 z-10 flex items-center justify-center flex-wrap bg-plum-600/90 dark:bg-navy-600/90 p-2 w-full">
         <Link href="/">
-          <div className="inline-flex items-center p-2 mr-4 ">
+          <div className="inline-flex items-center p-2 mr-4">
             <Image
               className="relative fill-current invert dark:invert mr-4"
               src="/DaveAndJerri.svg"
@@ -91,6 +94,11 @@ const Navigation = ({ }) => {
             <Link href="/contact" onClick={() => setActive(!active)}>
               <div className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-plum-300 dark:hover:bg-navy-300 hover:text-plum-900 dark:hover:text-navy-900">
                 Contact
+              </div>
+            </Link>
+            <Link href="/details" onClick={() => setActive(!active)}>
+              <div className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-plum-300 dark:hover:bg-navy-300 hover:text-plum-900 dark:hover:text-navy-900">
+                Details
               </div>
             </Link>
           </div>
