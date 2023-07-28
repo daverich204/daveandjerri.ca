@@ -52,9 +52,9 @@ export const GuestAttendance = ({ guestId, responses, handleResponseChange, hasG
             <label>
               <input
                 type="radio"
-                value="No"
-                checked={isGuestChecked("No")}
-                onChange={() => handleResponseChange(guestId, "No")}
+                value="Virtual"
+                checked={isGuestChecked("Virtual")}
+                onChange={() => handleResponseChange(guestId, "Virtual")}
                 className="mr-2 leading-tight"
               />
               <span className="text-xl">Attending Virtually</span>
