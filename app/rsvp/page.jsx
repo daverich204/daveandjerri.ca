@@ -27,7 +27,7 @@ const RsvpCodePage = () => {
 
         <form onSubmit={handleSubmit} className={"flex-col mt-12"}>
           <div className={"relative"}>
-            <label htmlFor={"invite_code"} className={"mt-12 pr-12"}>Please enter you&apos;re invite code</label>
+            <label htmlFor={"invite_code"} className={"mt-12 pr-12"}>Please enter the 5 digit code on the back of your invitation.</label>
             <input
               className="text-black dark:text-white text-center text-2xl enabled:hover:border-gray-400 disabled:opacity-75 p-1 w-full rounded-lg mt-4"
               type={"text"} id={"invite_code"} name={"invite_code"} required />
